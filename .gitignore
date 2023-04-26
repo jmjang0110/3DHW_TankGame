@@ -34,4 +34,4 @@
 # my Except Ignore File
 
 *.vs
-x64/
+TankGame/x64/

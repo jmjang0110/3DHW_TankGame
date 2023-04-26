@@ -2,11 +2,11 @@
   GameFramework.cpp
   GameObject.cpp
   GraphicsPipeline.cpp
-  LabProject02-02.cpp
   Mesh.cpp
   Player.cpp
   Scene.cpp
   stdafx.cpp
+  TankGame.cpp
   Timer.cpp
   코드를 생성하고 있습니다...
-  LabProject02-02.vcxproj -> C:\Users\jmjan\Downloads\LabProject02-02 (2)\LabProject02-02\x64\Debug\LabProject02-02.exe
+  LabProject02-02.vcxproj -> C:\MyGithub\School\3DHW_TankGame\TankGame\x64\Debug\LabProject02-02.exe

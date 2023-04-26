@@ -1,1 +1,2 @@
 C:\Users\jmjan\Downloads\LabProject02-02 (2)\LabProject02-02\x64\Debug\LabProject02-02.exe
+C:\MyGithub\School\3DHW_TankGame\TankGame\x64\Debug\LabProject02-02.exe

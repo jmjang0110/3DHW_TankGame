@@ -12,25 +12,24 @@ public:
 public:
 	TCHAR						m_pstrFrameName[256];
 
-	bool						m_bActive = true;
+	bool						m_bActive				= true;
+	CMesh*						m_pMesh					= NULL;
 
-	CMesh*						m_pMesh = NULL;
-	XMFLOAT4X4					m_xmf4x4Transform = Matrix4x4::Identity();
-	XMFLOAT4X4					m_xmf4x4World = Matrix4x4::Identity();
+	XMFLOAT4X4					m_xmf4x4Transform		= Matrix4x4::Identity();
+	XMFLOAT4X4					m_xmf4x4World			= Matrix4x4::Identity();
+	BoundingOrientedBox			m_xmOOBB				= BoundingOrientedBox();
 
-	BoundingOrientedBox			m_xmOOBB = BoundingOrientedBox();
+	CGameObject*				m_pObjectCollided		= NULL;
+	DWORD						m_dwDefaultColor		= RGB(255, 0, 0);
+	DWORD						m_dwColor				= RGB(255, 0, 0);
 
-	CGameObject*				m_pObjectCollided = NULL;
-	DWORD						m_dwDefaultColor = RGB(255, 0, 0);
-	DWORD						m_dwColor = RGB(255, 0, 0);
+	XMFLOAT3					m_xmf3MovingDirection	= XMFLOAT3(0.0f, 0.0f, 1.0f);
+	float						m_fMovingSpeed			= 0.0f;
+	float						m_fMovingRange			= 0.0f;
 
-	XMFLOAT3					m_xmf3MovingDirection = XMFLOAT3(0.0f, 0.0f, 1.0f);
-	float						m_fMovingSpeed = 0.0f;
-	float						m_fMovingRange = 0.0f;
-
-	CGameObject*				m_pParent = NULL;
-	CGameObject*				m_pChild = NULL;
-	CGameObject*				m_pSibling = NULL;
+	CGameObject*				m_pParent				= NULL;
+	CGameObject*				m_pChild				= NULL;
+	CGameObject*				m_pSibling				= NULL;
 
 public:
 	void SetActive(bool bActive) { m_bActive = bActive; }

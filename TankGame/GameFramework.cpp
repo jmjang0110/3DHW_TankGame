@@ -5,6 +5,18 @@
 #include "stdafx.h"
 #include "GameFramework.h"
 
+void CGameFramework::Update(const float& _fTimeElapsed)
+{
+
+
+}
+
+void CGameFramework::Render(const float& _fTimeElapsed)
+{
+
+
+}
+
 void CGameFramework::OnCreate(HINSTANCE hInstance, HWND hMainWnd)
 {
 	::srand(timeGetTime());
@@ -224,9 +236,15 @@ void CGameFramework::ProcessInput()
 
 void CGameFramework::AnimateObjects()
 {
+
 	float fTimeElapsed = m_GameTimer.GetTimeElapsed();
-	if (m_pPlayer) m_pPlayer->Animate(fTimeElapsed);
-	if (m_pScene) m_pScene->Animate(fTimeElapsed);
+
+	if (m_pPlayer)	
+		m_pPlayer->Animate(fTimeElapsed);
+
+	if (m_pScene)	
+		m_pScene->Animate(fTimeElapsed);
+
 }
 
 void CGameFramework::FrameAdvance()

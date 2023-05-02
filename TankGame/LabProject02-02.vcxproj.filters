@@ -38,6 +38,9 @@
     <Filter Include="Engine\GameObject\Player">
       <UniqueIdentifier>{984712cd-ac62-4b4c-b9f6-f6fcc513db15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Transform">
+      <UniqueIdentifier>{d9cabc88-35e9-4bbb-bca1-9019c3736490}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LabProject02-02.rc">
@@ -80,7 +83,12 @@
     <ClCompile Include="Player.cpp">
       <Filter>Engine\GameObject\Player</Filter>
     </ClCompile>
-    <ClCompile Include="TankGame.cpp" />
+    <ClCompile Include="TankGame.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Engine\Transform</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Timer.h">
@@ -110,6 +118,11 @@
     <ClInclude Include="Player.h">
       <Filter>Engine\GameObject\Player</Filter>
     </ClInclude>
-    <ClInclude Include="TankGame.h" />
+    <ClInclude Include="TankGame.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Engine\Transform</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

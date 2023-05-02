@@ -33,6 +33,13 @@ private:
 	_TCHAR						m_pszFrameRate[50];
 
 public:
+	void Update(const float& _fTimeElapsed);
+	void Render(const float& _fTimeElapsed);
+
+
+
+
+public:
 	void OnCreate(HINSTANCE hInstance, HWND hMainWnd);
 	void OnDestroy();
 

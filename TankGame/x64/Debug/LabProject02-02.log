@@ -1,12 +1,2 @@
-﻿  Camera.cpp
-  GameFramework.cpp
-  GameObject.cpp
-  GraphicsPipeline.cpp
-  Mesh.cpp
-  Player.cpp
-  Scene.cpp
-  stdafx.cpp
-  TankGame.cpp
-  Timer.cpp
-  코드를 생성하고 있습니다...
+﻿  Transform.cpp
   LabProject02-02.vcxproj -> C:\MyGithub\School\3DHW_TankGame\TankGame\x64\Debug\LabProject02-02.exe

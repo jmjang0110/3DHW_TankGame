@@ -3,6 +3,7 @@
 #include "GameObject.h"
 #include "Camera.h"
 #include "Player.h"
+#include <vector>
 
 class CScene
 {
@@ -11,12 +12,11 @@ public:
 	virtual ~CScene();
 
 private:
-	int							m_nObjects = 0;
-	CGameObject					**m_ppObjects = NULL;
-
-	CFloorObject*				m_pFloorObject = NULL;
-
-	CPlayer*					m_pPlayer = NULL;
+	int							m_nObjects		= 0;
+	
+	CGameObject					**m_ppObjects	= NULL;
+	CFloorObject*				m_pFloorObject	= NULL;
+	CPlayer*					m_pPlayer		= NULL;
 
 #ifdef _WITH_DRAW_AXIS
 	CGameObject*				m_pWorldAxis = NULL;
